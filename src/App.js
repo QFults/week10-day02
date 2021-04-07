@@ -1,16 +1,17 @@
-import Card from './components/Card'
+import Item from './components/Item'
 
-const person = {
-  name: 'John Doe',
-  email: 'johndoe@gmail.com',
-  bio: 'My name is John Doe! I am a developer and I love coding!'
-}
+const people = ['John Doe', 'Jane Doe', 'Jack Doe', 'Jennifer Doe', 'James Doe']
 
 const App = () => {
   return (
     <>
-      <h1>The {person.name} Application</h1>
-      <Card person={person} />
+      <h1>Hello World!</h1>
+      {/* {[<button>Click Me</button>, <button>Don't Click Me</button>]} */}
+      <ul className='list-group'>
+        {
+          people.map((person, i) => <Item key={i} person={person} />)
+        }
+      </ul>
     </>
   )
 }
