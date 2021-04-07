@@ -2,5 +2,5 @@
 
 ## Today's Agenda
 - Props and Components
-- Smart Components
+- React Hooks
 - React Router
